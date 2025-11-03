@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  /* Header Section */
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .logo-box {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  /* Navigation Menu */
+  nav {
+    display: flex;
+    background-color: #222;
+  }
+
+  nav a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #444;
+  }
+
+  /* Main Content */
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Top Row with two sections */
+.top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* About Me and Student Photo sections */
+.about-me, .student-photo {
+  background-color: #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 200px;
+  height: 150px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Social icons styles */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.social-icons span {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Stack header elements vertically on small screens */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  /* Stack navigation vertically */
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  /* Stack top row sections vertically */
+  .top-row {
+    flex-direction: column;
+  }
+
+  /* About Me and Student Photo full width */
+  .about-me, .student-photo {
+    min-width: 100%;
+  }
+
+  h2 {
+    font-family: "Georgia", serif;
+  }
+  .buttons {
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #e76f51;
+  }
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .course {
+    background-color: #f7e2d6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+   .completed {
+    background-color: #d3f9d8;
+    border: 2px solid #34a853;
+  }
+
+  .stats {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }}

@@ -5,9 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="/styles/homepage.css">
-    
+    <script src="scripts/scripts.js" defer></script>
+    </head>
+    <header>
+  <div class="logo">
+    <div class="logo-box"></div>
+    <h1>Home Page</h1>
+  </div>
+</header>
+    <nav>
+  <a href="#">Home</a>
+  <a href="#">Chamber Project</a>
+  <a href="#">Final Project</a>
+</nav>
 </head>
 <body>
-    <p>hello this is my demo </p>
+<div class="main">
+  <div class="top-row">
+    <!-- About Me Section -->
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>
+        My name is Eliel Diaz, I from Honduras, there are two places that I like to visit the beach and the temple,
+        both places I can feel the savior's love, see his wonderful creations in the beach and recive revelation and his house.
+      </p>
+    </div>
+    <!-- Student Photo -->
+    <div class="student-photo">
+      <h2>Student Photo</h2>
+    </div>
+  </div>
+  
+  <!-- Web Certificate Courses -->
+  <div class="courses">
+    <div class="courses-header">
+      <h3>Web and Computer Programming Certificate</h3>
+
+<div class="buttons">
+  <button onclick="filterCourses('all')">All Courses</button>
+  <button onclick="filterCourses('wdd')">WDD Courses</button>
+  <button onclick="filterCourses('cse')">CSE Courses</button>
+</div>
+<div class="stats" id="courseStats">
+  <!-- Total number of courses and credits will be displayed here -->
+</div>
+
+<div class="courses" id="coursesContainer">
+  <!-- Courses will be added here dynamically -->
+</div>
 </body>
+<!-- Footer -->
+<footer>
+  <div class="social-icons">
+    <span>in</span>
+    <span>gh</span>
+    <span>X</span>
+  </div>
+  <p>&copy; <span id="year"></span> Cristhian Diaz, Honduras</p>
+  <p>Last modification: <span id="lastModified"></span></p>
+   
+</footer>
 </html>
