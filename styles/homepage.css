@@ -68,8 +68,8 @@ body {
   padding: 10px;
   box-sizing: border-box;
   flex: 1;
-  min-width: 200px;
-  height: 150px;
+  min-width: 250px;
+  height: 200px;
 }
 .profile{
   padding: 5px;
