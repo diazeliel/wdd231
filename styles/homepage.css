@@ -141,7 +141,7 @@ footer {
     min-width: 100%;
   }
 
-  h2 {
+  h2, h3 {
     font-family: "Georgia", serif;
   }
   .buttons {
