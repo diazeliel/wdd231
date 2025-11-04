@@ -71,6 +71,13 @@ body {
   min-width: 200px;
   height: 150px;
 }
+.profile{
+  padding: 5px;
+  align-items: center;
+  min-width:100px;
+  height: 100px;
+  display: flex;
+}
 
 /* Footer styles */
 footer {
