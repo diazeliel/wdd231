@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Carrion.",
+    "address": "mall Las Americas, choloma, Cortes, Honduras",
+    "phone": "+1-555-1234",
+    "website": "https://carrion.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/carrion.png",
+    "membership_level": 3,
+    "other_info": "fashion leader."
+  },
+  {
+    "name": "Estelina.",
+    "address": "San Pedro Sula, Cortes, Honduras",
+    "phone": "+1-555-5678",
+    "website": "https://estelina.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/estelina.jpg",
+    "membership_level": 2,
+    "other_info": "Buffet Restaurant."
+  },
+  {
+    "name": "Pollo El Hondureño",
+    "address": "San Pedro Sula, Cortes, Honduras",
+    "phone": "+1-555-9012",
+    "website": "https://polloelhondureño.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/pollos.png",
+    "membership_level": 1,
+    "other_info": "fry chicken."
+  },
+  {
+    "name": "Power Chicken",
+    "address": "Palenque, San Pedro Sula, Cortes, Honduras",
+    "phone": "+1-555-3456",
+    "website": "https://powerchicken.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/powerchicken.png",
+    "membership_level": 3,
+    "other_info": "Delicious Food."
+  },
+  {
+    "name": "Inalma",
+    "address": "Choloma, Cortes, Honduras",
+    "phone": "+1-555-7890",
+    "website": "https://inalma.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/inalma.jpg",
+    "membership_level": 2,
+    "other_info": "snaks and Food."
+  },
+  {
+    "name": "Mexichem",
+    "address": "Choloma, Cortes, Honduras",
+    "phone": "+1-555-2345",
+    "website": "https://mexichem.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/mexichem.jpg",
+    "membership_level": 1,
+    "other_info": "provides specialty products."
+  },
+  {
+    "name": "Transportes Cristina",
+    "address": "Bus station, San Pedro Sula, Cortes, Honduras",
+    "phone": "+1-555-6789",
+    "website": "https://transportescristina.com",
+    "image": "https://diazeliel.github.io/wdd231/chamber/images/transport.png",
+    "membership_level": 2,
+    "other_info": "logistic services."
+  }
+]
