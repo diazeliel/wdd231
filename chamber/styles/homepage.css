@@ -1,0 +1,133 @@
+ body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #FFFFFF;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #005A9E;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #f2f2f2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    Run
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* or desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+    .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #FFC107;
+      color: #333;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e0a800;
+    }
+
+    /* Main Content */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    /* Sections */
+    .section {
+      flex: 1 1 300px;
+      margin: 10px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Event Highlights */
+    .events h2,
+    .weather h2,
+    .business h2 {
+      margin-bottom: 15px;
+      color: #005A9E;
+    }
+
+    /* Business Directory List */
+    .business-list {
+      list-style: none;
+    }
+
+    .business-item {
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #005A9E;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      main {
+        flex-direction: column;
+      }
+    }
+  

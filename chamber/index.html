@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<meta name="description" content="Home page." >
+<meta name="author" content="Cristhian Diaz" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:wght@200..900&family=Momo+Trust+Display&family=Slabo+27px&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/homepage.css" />
+  <!-- Header -->
+  <header>
+    <div class="logo">Cortes Chamber</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="#">Join</a>
+      <a href="#">Discover</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!--<img src="images/hero.png" alt="Hero Image" class="hero-image" />-->
+    <h1>Welcome to the Cortes Chamber of Commerce</h1>
+    <p>Connecting businesses, promoting growth, and fostering community in Cortes.</p>
+    <a href="#" class="btn">Join Now</a>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Event Highlights -->
+    <section class="section events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Business Networking Breakfast</strong> - September 15, 2026</li>
+        <li><strong>Marketing Workshop</strong> - September 22, 2026</li>
+        <li><strong>Annual Gala</strong> - Dicember 10, 2025</li>
+      </ul>
+    </section>
+
+    <!-- Weather Widget -->
+    <section class="section weather">
+      <h2>Current Weather</h2>
+      <p><strong>Timbuktu:</strong> Sunny, 85°F / 29°C</p>
+      <p>Forecast: Partly cloudy with a chance of showers later this week.</p>
+    </section>
+
+    <!-- Business Directory -->
+    <section class="section business">
+      <h2>Business Directory</h2>
+      <ul class="business-list">
+        <li class="business-item">
+          <strong>Sunrise Boutique</strong><br/>
+          Contact: (555) 123-4567<br/>
+          <a href="#">Visit Profile</a>
+        </li>
+        <li class="business-item">
+          <strong>Timbuktu Tech</strong><br/>
+          Contact: (555) 987-6543<br/>
+          <a href="#">Visit Profile</a>
+        </li>
+        <li class="business-item">
+          <strong>Golden Eats Restaurant</strong><br/>
+          Contact: (555) 222-3333<br/>
+          <a href="#">Visit Profile</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+   <p>&copy; <span id="currentYear"></span> Cristhian Diaz, WDD 231</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+<!-- Scripts -->
+<script src="scripts/script.js"></script>
+<script>
+  // Set dynamic year
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  // Set last modified date
+  document.getElementById('lastModified').textContent = document.lastModified;
+</script>
+  </footer>
+
+</body>
+</html>
