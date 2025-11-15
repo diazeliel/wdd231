@@ -12,9 +12,9 @@
 <link rel="stylesheet" href="styles/homepage.css" />
   <!-- Header -->
   <header>
-    <div class="logo">Cortes Chamber</div>
+    <div class="logo">Choloma Chamber</div>
     <nav>
-      <a href="#">Home</a>
+      <a href="https://diazeliel.github.io/wdd231/chamber/index.html">Home</a>
       <a href="directory.html">Directory</a>
       <a href="#">Join</a>
       <a href="#">Discover</a>
@@ -23,8 +23,8 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <!--<img src="images/hero.png" alt="Hero Image" class="hero-image" />-->
-    <h1>Welcome to the Cortes Chamber of Commerce</h1>
+  <img src="images/hero.png" alt="Hero Image" class="hero-image" />
+    <h1>Welcome to the Choloma Chamber of Commerce</h1>
     <p>Connecting businesses, promoting growth, and fostering community in Cortes.</p>
     <a href="#" class="btn">Join Now</a>
   </section>
@@ -42,11 +42,12 @@
     </section>
 
     <!-- Weather Widget -->
-    <section class="section weather">
-      <h2>Current Weather</h2>
-      <p><strong>Timbuktu:</strong> Sunny, 85°F / 29°C</p>
-      <p>Forecast: Partly cloudy with a chance of showers later this week.</p>
-    </section>
+    <div class="section weather">
+      <h2 id="town"></h2>
+      <img id="graphic" src="" alt="">
+      <p id="description"></p>
+      <p id="temperature"></p> 
+    </div>
 
     <!-- Business Directory -->
     <section class="section business">
@@ -70,6 +71,7 @@
       </ul>
     </section>
   </main>
+  <script src="scripts/weather.js"></script>
 
   <!-- Footer -->
   <footer>

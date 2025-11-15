@@ -34,17 +34,6 @@
       text-align: center;
     }
 
-    Run
-.hero {
-    background-image: url('your-hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px; /* or desired height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
     .hero-image {
     width: 100%;
     height: auto;
@@ -53,7 +42,7 @@
 
     .hero h1 {
       font-size: 2.5em;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     .hero p {
