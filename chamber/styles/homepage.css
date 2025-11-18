@@ -106,15 +106,21 @@ button:hover {
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     /* Event Highlights */
-    .events h2,
-    .weather h2,
-    .business h2 {
+  .events li {
       margin-bottom: 15px;
-      color: #005A9E;
+       text-align: left;
     }
+    p1, p2, h1{
+      text-transform: capitalize;
+      font-size: 1rem;
+      text-align:center;
+
+    }
+
 
     /* Business Directory List */
     .business-list {

@@ -18,7 +18,6 @@ const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=
     const response = await fetch(myURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
       displayResults(data); // uncomment when ready
     } else {
         throw Error(await response.text());
@@ -29,7 +28,6 @@ const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=
 }
 
 function displayResults(data) {
-  console.log(`hello`)
   myTown.innerHTML = data.name
   myDescription.innerHTML = data.weather[0].description
   myTemperature.innerHTML = `${data.main.temp}&deg;F`
