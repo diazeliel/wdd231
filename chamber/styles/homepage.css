@@ -1,31 +1,36 @@
  body {
       font-family: 'Open Sans', sans-serif;
       background-color: #f4f4f4;
-      color: #333333;
-      line-height: 1.6;
+      color: #0e0d0d;
+      line-height: 1.9;
     }
 
     /* Header Styles */
     header {
   text-align: center;
   margin-bottom: 20px;
+  background-color: #005A9E;
 }
 
 header h1 {
   margin-bottom: 10px;
+  
 }
     
   nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+ 
 }
 nav li {
   margin: 0 15px;
+
 }
 nav a {
   text-decoration: none;
-  color: #2C3E50 ;
+  color: #0a0a0a;
+  
 }
 nav a.active {
   font-weight: bold;
@@ -124,7 +129,7 @@ button:hover {
     footer {
     text-align: center; 
     padding: 20px; 
-    background-color: #f2f2f2;
+    background-color: #005A9E;
     }
 
     /* Responsive */
@@ -141,7 +146,6 @@ button:hover {
       }
     }
   
- 
 
 /* Style for hamburger icon */
 .hamburger {
@@ -160,7 +164,7 @@ button:hover {
   #navMenu {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #005A9E;
     position: absolute;
     top: 50px; /* adjust as needed */
     right: 10px;
