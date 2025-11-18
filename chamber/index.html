@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<meta name="description" content="Home page." >
-<meta name="author" content="Cristhian Diaz" >
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:wght@200..900&family=Momo+Trust+Display&family=Slabo+27px&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/homepage.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <meta name="description" content="Home page.">
+  <meta name="author" content="Cristhian Diaz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:wght@200..900&family=Momo+Trust+Display&family=Slabo+27px&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/homepage.css" />
   <!-- Header -->
   <header>
     <div class="logo">Choloma Chamber</div>
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
     <nav>
-      <a href="https://diazeliel.github.io/wdd231/chamber/index.html">Home</a>
-      <a href="directory.html">Directory</a>
-      <a href="#">Join</a>
-      <a href="#">Discover</a>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="https://diazeliel.github.io/wdd231/chamber/index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Discovery</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-  <img src="images/hero.png" alt="Hero Image" class="hero-image" />
-    <h1>Welcome to the Choloma Chamber of Commerce</h1>
-    <p>Connecting businesses, promoting growth, and fostering community in Cortes.</p>
+    <img src="images/hero.png" alt="hero-mage" class="hero-image" />
+    <h2>Welcome to the Choloma Chamber of Commerce</h2>
+    <p>Connecting businesses, promoting growth, and fostering community in Choloma.</p>
     <a href="#" class="btn">Join Now</a>
   </section>
 
@@ -35,18 +43,19 @@
     <section class="section events">
       <h2>Upcoming Events</h2>
       <ul>
-        <li><strong>Business Networking Breakfast</strong> - September 15, 2026</li>
-        <li><strong>Marketing Workshop</strong> - September 22, 2026</li>
         <li><strong>Annual Gala</strong> - Dicember 10, 2025</li>
+        <li><strong>Business Networking Breakfast</strong> - January 15, 2026</li>
+        <li><strong>Marketing Workshop</strong> - January 22, 2026</li>
       </ul>
     </section>
 
     <!-- Weather Widget -->
     <div class="section weather">
-      <h2 id="town"></h2>
+      <h2>Weather</h2>
+      <h1 id="town"></h1>
       <img id="graphic" src="" alt="">
       <p id="description"></p>
-      <p id="temperature"></p> 
+      <p id="temperature"></p>
     </div>
 
     <!-- Business Directory -->
@@ -54,18 +63,18 @@
       <h2>Business Directory</h2>
       <ul class="business-list">
         <li class="business-item">
-          <strong>Sunrise Boutique</strong><br/>
-          Contact: (555) 123-4567<br/>
+          <strong>Sunrise Boutique</strong><br />
+          Contact: (555) 123-4567<br />
           <a href="#">Visit Profile</a>
         </li>
         <li class="business-item">
-          <strong>Timbuktu Tech</strong><br/>
-          Contact: (555) 987-6543<br/>
+          <strong>Choloma Tech</strong><br />
+          Contact: (555) 987-6543<br />
           <a href="#">Visit Profile</a>
         </li>
         <li class="business-item">
-          <strong>Golden Eats Restaurant</strong><br/>
-          Contact: (555) 222-3333<br/>
+          <strong>Golden Eats Restaurant</strong><br />
+          Contact: (555) 222-3333<br />
           <a href="#">Visit Profile</a>
         </li>
       </ul>
@@ -75,19 +84,20 @@
 
   <!-- Footer -->
   <footer>
-   <p>&copy; <span id="currentYear"></span> Cristhian Diaz, WDD 231</p>
-  <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
-<!-- Scripts -->
-<script src="scripts/script.js"></script>
-<script>
-  // Set dynamic year
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
+    <p>&copy; <span id="currentYear"></span> Cristhian Diaz, WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+  <!-- Scripts -->
+  <script src="scripts/home.js"></script>
+  <script>
+    // Set dynamic year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-  // Set last modified date
-  document.getElementById('lastModified').textContent = document.lastModified;
-</script>
+    // Set last modified date
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
   </footer>
 
-</body>
+  </body>
+
 </html>

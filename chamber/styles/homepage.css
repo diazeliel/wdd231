@@ -1,38 +1,60 @@
  body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #FFFFFF;
+      background-color: #f4f4f4;
       color: #333333;
       line-height: 1.6;
     }
 
     /* Header Styles */
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #005A9E;
-      color: #fff;
-    }
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
+header h1 {
+  margin-bottom: 10px;
+}
+    
+  nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #2C3E50 ;
+}
+nav a.active {
+  font-weight: bold;
+}
 
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+/* Controls Buttons */
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #555;
+}
 
-    /* Hero Section */
+    /* Hero Section*/
     .hero {
-      background-color: #f2f2f2;
+      background-color: #fffffffd;
       padding: 40px 20px;
       text-align: center;
-    }
+    } 
 
     .hero-image {
     width: 100%;
@@ -100,10 +122,9 @@
 
     /* Footer */
     footer {
-      background-color: #005A9E;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    text-align: center; 
+    padding: 20px; 
+    background-color: #f2f2f2;
     }
 
     /* Responsive */
@@ -120,3 +141,33 @@
       }
     }
   
+ 
+
+/* Style for hamburger icon */
+.hamburger {
+  display: none; /* Hidden on desktop by default */
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Show hamburger on mobile screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  /* Hide menu by default on mobile */
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px; /* adjust as needed */
+    right: 10px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  #navMenu.show {
+    display: flex;
+  }
+}
