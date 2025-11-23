@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join</title>
+  <meta name="description" content="join.">
+  <meta name="author" content="Cristhian Diaz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:wght@200..900&family=Momo+Trust+Display&family=Slabo+27px&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <meta property="og:title" content="join">
+  <meta property="og:description" content="Connecting businesses, promoting growth, and fostering community in Choloma.">
+  <meta property="og:image" content="https://diazeliel.github.io/wdd231/chamber/images/default.webp">
+  <meta property="og:url" content="https://diazeliel.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/join.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <i class="fas fa-building"></i>
+                Chamber of Commerce
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-address-book"></i> Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-user-plus"></i> Join</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#""><i class="fas fa-compass"></i> Discover</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="join-container">
+        <h1 class="section-title">Membership Application</h1>
+        
+        <div class="form-container">
+            <!-- Form Column -->
+            <div class="form-column">
+                <div class="form-card">
+                    <form id="membershipForm" method="get" action="/chamber/thankyou.html">
+                        <!-- Hidden timestamp field -->
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                        
+                        <!-- First Name -->
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label required-field">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" 
+                                   title="Enter your first name" required autocomplete="given-name">
+                        </div>
+                        
+                        <!-- Last Name -->
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label required-field">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" 
+                                   title="Enter your last name" required autocomplete="family-name">
+                        </div>
+                        
+                        <!-- Organizational Title -->
+                        <div class="mb-3">
+                            <label for="orgTitle" class="form-label">Organizational Title</label>
+                            <input type="text" class="form-control" id="orgTitle" name="orgTitle" 
+                                   title="Enter your title within your organization" 
+                                   autocomplete="organization-title"
+                                   pattern="[A-Za-z\s-]{7,}" 
+                                   placeholder="e.g., Marketing Director">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label required-field">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" 
+                                   title="Enter your email address" required 
+                                   autocomplete="email"
+                                   placeholder="e.g., name@example.com">
+                        </div>
+                        
+                        <!-- Mobile Phone -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label required-field">Mobile Phone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" 
+                                   title="Enter your mobile phone number" required 
+                                   autocomplete="tel">
+                        </div>
+                        
+                        <!-- Business/Organization Name -->
+                        <div class="mb-3">
+                            <label for="businessName" class="form-label required-field">Business/Organization Name</label>
+                            <input type="text" class="form-control" id="businessName" name="businessName" 
+                                   title="Enter your business or organization name" required 
+                                   autocomplete="organization">
+                        </div>
+                        
+                        <!-- Membership Level -->
+                        <div class="mb-3">
+                            <label for="membershipLevel" class="form-label required-field">Membership Level</label>
+                            <select class="form-select" id="membershipLevel" name="membershipLevel" required>
+                                <option value="" selected disabled>Select a membership level</option>
+                                <option value="np">NP Membership (Non-Profit Organizations - Free)</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Business Description -->
+                        <div class="mb-3">
+                            <label for="businessDescription" class="form-label">Business/Organization Description</label>
+                            <textarea class="form-control" id="businessDescription" name="businessDescription" 
+                                      title="Describe your business or organization" rows="4"></textarea>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="d-grid gap-2">
+                            <input type="submit" class="btn btn-primary" value="Submit Application">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Cards Column -->
+            <div class="cards-column">
+                 <!-- Membership Levels Title -->
+                <h2 class="membership-title">Membership Levels</h2>
+                <div class="membership-levels">
+                    <div class="membership-card np">
+                        <h3>NP Membership</h3>
+                        <div class="membership-price">Free</div>
+                        <ul class="membership-features">
+                            <li><i class="fas fa-check"></i> Basic directory listing</li>
+                            <li><i class="fas fa-check"></i> Monthly newsletter</li>
+                            <li><i class="fas fa-check"></i> Event invitations</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-secondary membership-link" data-level="np">Learn More</a>
+                    </div>
+                    <div class="membership-card bronze">
+                        <h3>Bronze Membership</h3>
+                        <div class="membership-price">$99/year</div>
+                        <ul class="membership-features">
+                            <li><i class="fas fa-check"></i> Enhanced directory listing</li>
+                            <li><i class="fas fa-check"></i> Monthly newsletter</li>
+                            <li><i class="fas fa-check"></i> Event invitations</li>
+                            <li><i class="fas fa-check"></i> Quarterly workshops</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-secondary membership-link" data-level="bronze">Learn More</a>
+                    </div>
+                    <div class="membership-card silver">
+                        <h3>Silver Membership</h3>
+                        <div class="membership-price">$199/year</div>
+                        <ul class="membership-features">
+                            <li><i class="fas fa-check"></i> Premium directory listing</li>
+                            <li><i class="fas fa-check"></i> Monthly newsletter</li>
+                            <li><i class="fas fa-check"></i> Event invitations</li>
+                            <li><i class="fas fa-check"></i> Monthly workshops</li>
+                            <li><i class="fas fa-check"></i> Annual conference discount</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-secondary membership-link" data-level="silver">Learn More</a>
+                    </div>
+                    <div class="membership-card gold">
+                        <h3>Gold Membership</h3>
+                        <div class="membership-price">$299/year</div>
+                        <ul class="membership-features">
+                            <li><i class="fas fa-check"></i> Featured directory listing</li>
+                            <li><i class="fas fa-check"></i> Monthly newsletter</li>
+                            <li><i class="fas fa-check"></i> VIP event invitations</li>
+                            <li><i class="fas fa-check"></i> All workshops included</li>
+                            <li><i class="fas fa-check"></i> Free annual conference pass</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-secondary membership-link" data-level="gold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Membership Details -->
+    <!-- NP Modal -->
+    <div id="npModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>NP Membership (Non-Profit)</h2>
+            <p>Our Non-Profit membership is designed for charitable organizations and NGOs who want to connect with our community.</p>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Basic directory listing with organization information</li>
+                <li>Monthly newsletter featuring community updates</li>
+                <li>Invitations to all networking events</li>
+                <li>Access to volunteer opportunities</li>
+                <li>Eligibility for grant programs</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bronze Modal -->
+    <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Bronze Membership</h2>
+            <p>Bronze membership is perfect for individuals and small businesses looking to establish a presence in our community.</p>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Enhanced directory listing with logo and detailed information</li>
+                <li>Monthly newsletter featuring industry insights</li>
+                <li>Invitations to all networking events</li>
+                <li>Quarterly professional development workshops</li>
+                <li>Access to member-only resources</li>
+                <li>10% discount on event tickets</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Silver Modal -->
+    <div id="silverModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Silver Membership</h2>
+            <p>Silver membership offers expanded benefits for growing businesses and professionals seeking greater visibility.</p>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Premium directory listing with featured placement</li>
+                <li>Monthly newsletter with exclusive content</li>
+                <li>VIP invitations to networking events</li>
+                <li>Monthly professional development workshops</li>
+                <li>Full access to member-only resources</li>
+                <li>25% discount on event tickets</li>
+                <li>Annual conference discount (20% off)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Gold Modal -->
+    <div id="goldModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Gold Membership</h2>
+            <p>Gold membership provides maximum visibility and benefits for established businesses and industry leaders.</p>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Featured directory listing with premium placement</li>
+                <li>Monthly newsletter with thought leadership opportunities</li>
+                <li>VIP invitations to exclusive events</li>
+                <li>All workshops and training sessions included</li>
+                <li>Full access to member-only resources</li>
+                <li>Free entry to all events</li>
+                <li>Complimentary annual conference pass</li>
+                <li>Priority customer support</li>
+                <li>Opportunity to host events</li>
+                <li>Home page spotlight position (rotating)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts/join.js"></script>
+    
+
+</body>
+</html>
