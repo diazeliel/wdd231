@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Chamber of Commerce</title>
-    <link href="styles/thankyou.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/join.css">
-    
-</head>
-<body>
-    <!-- Navigation -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join</title>
+  <meta name="description" content="application.">
+  <meta name="author" content="Cristhian Diaz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:wght@200..900&family=Momo+Trust+Display&family=Slabo+27px&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <meta property="og:title" content="thankyou">
+  <meta property="og:description" content="Connecting businesses, promoting growth, and fostering community in Choloma.">
+  <meta property="og:image" content="https://diazeliel.github.io/wdd231/chamber/images/default.webp">
+  <meta property="og:url" content="https://diazeliel.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/thankyou.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+<!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Chamber of Commerce</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#">
+            <i class="fas fa-handshake"></i>
+                Chamber of Commerce
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="https://diazeliel.github.io/wdd231/chamber/index.html"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Directory</a>
+                        <a class="nav-link" href="https://diazeliel.github.io/wdd231/chamber/directory.html"><i class="fas fa-address-book"></i> Directory</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Join</a>
+                        <a class="nav-link active" href="https://diazeliel.github.io/wdd231/chamber/join.html"><i class="fas fa-user-plus"></i> Join</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Discover</a>
+                        <a class="nav-link" href="#"><i class="fas fa-compass"></i> Discover</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Main Content -->
     <div class="thankyou-container">
         <div class="thankyou-card">
@@ -49,7 +63,6 @@
         <div class="info-card">
             <h2 class="info-title">Application Details</h2>
             <div id="applicationDetails">
-                <!-- Application details will be populated by JavaScript -->
             </div>
         </div>
     </div>

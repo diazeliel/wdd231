@@ -96,3 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 });
+
+// Set last modified date in footer
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('lastModified').textContent = document.lastModified;
+});

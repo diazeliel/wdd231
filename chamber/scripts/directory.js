@@ -94,12 +94,31 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('lastModified').textContent = document.lastModified;
 });
 
-//hamburguer menu
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
-
-
+document.addEventListener('DOMContentLoaded', function() {
+            //Initialize Bootstrap components
+            const navbarToggler = document.getElementById('navbarToggler');
+            const navbarNav = document.getElementById('navbarNav');
+            const navlinks = document.querySelectorAll('.nav-link');
+            
+            // Custom navbar toggle functionality
+            navbarToggler.addEventListener('click', function() {
+                if (navbarNav.classList.contains('show')) {
+                    navbarNav.classList.remove('show');
+                    navbarNav.setAttribute('aria-expanded', 'false');
+                } else {
+                    navbarNav.classList.add('show');
+                    navbarNav.setAttribute('aria-expanded', 'true');
+                }
+            });
+            
+            // Close navbar when clicking on a link (mobile)
+            var navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 991.98) {
+                        navbarNav.classList.remove('show');
+                        navbarNav.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+          })
