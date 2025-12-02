@@ -116,4 +116,33 @@ displayItems(places)
                         navbarNav.setAttribute('aria-expanded', 'true');
                     }
                 });
+
+// Close navbar when clicking on a link (mobile)
+                var navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        if (window.innerWidth <= 991.98) {
+                            navbarNav.classList.remove('show');
+                            navbarNav.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                });
+                
+                // Close navbar when clicking outside (mobile)
+                document.addEventListener('click', function(event) {
+                    if (window.innerWidth <= 991.98 && 
+                        !navbarNav.contains(event.target) && 
+                        !navbarToggler.contains(event.target)) {
+                        navbarNav.classList.remove('show');
+                        navbarNav.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                // Handle window resize
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth > 991.98) {
+                        navbarNav.classList.remove('show');
+                        navbarNav.setAttribute('aria-expanded', 'false');
+                    }
+                });
                 
