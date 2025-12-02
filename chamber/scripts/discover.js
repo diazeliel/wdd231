@@ -36,46 +36,84 @@ function displayItems(places) {
 }
 displayItems(places)
 
-const navbarToggler = document.getElementById('navbarToggler');
-            const navbarNav = document.getElementById('navbarNav');
-            const navlinks = document.querySelectorAll('.nav-link');
+    // Visitor message functionality
+    function displayVisitorMessage() {
+        const visitorMessageContainer = document.getElementById('visitor-message-container');
+        
+        // Get the current time in milliseconds
+        const now = Date.now();
+        
+        // Get the last visit from localStorage
+        const lastVisit = localStorage.getItem('lastVisit');
+        
+        let message;
+        let iconClass = 'fas fa-info-circle';
+        
+        if (!lastVisit) {
+            // First visit
+            message = "Welcome! Let us know if you have any questions.";
+            iconClass = 'fas fa-smile';
+        } else {
+            // Calculate days between visits
+            const lastVisitTime = parseInt(lastVisit);
+            const daysSinceLastVisit = Math.floor((now - lastVisitTime) / (1000 * 60 * 60 * 24));
             
-            // Custom navbar toggle functionality
-            navbarToggler.addEventListener('click', function() {
-                if (navbarNav.classList.contains('show')) {
-                    navbarNav.classList.remove('show');
-                    navbarNav.setAttribute('aria-expanded', 'false');
-                } else {
-                    navbarNav.classList.add('show');
-                    navbarNav.setAttribute('aria-expanded', 'true');
-                }
-            });
-            
-            // Close navbar when clicking on a link (mobile)
-            var navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 991.98) {
+            if (daysSinceLastVisit < 1) {
+                // Less than a day
+                message = "Back so soon! Awesome!";
+                iconClass = 'fas fa-thumbs-up';
+            } else {
+                // More than a day
+                const dayText = daysSinceLastVisit === 1 ? "day" : "days";
+                message = `You last visited ${daysSinceLastVisit} ${dayText} ago.`;
+                iconClass = 'fas fa-calendar-check';
+            }
+        }
+        
+        // Create the message element
+        const messageElement = document.createElement('div');
+        messageElement.className = 'visitor-message';
+        messageElement.innerHTML = `
+            <div>
+                <i class="${iconClass}"></i>
+                <p>${message}</p>
+            </div>
+            <button class="close-message" aria-label="Close message">
+                <i class="fas fa-times"></i>
+            </button>
+        `;
+        
+        // Add the message to the container
+        visitorMessageContainer.appendChild(messageElement);
+        
+        // Add close button functionality
+        const closeButton = messageElement.querySelector('.close-message');
+        closeButton.addEventListener('click', function() {
+            messageElement.style.animation = 'slideDown 0.5s ease-out reverse';
+            setTimeout(() => {
+                visitorMessageContainer.removeChild(messageElement);
+            }, 500);
+        });
+        
+        // Update the last visit time in localStorage
+        localStorage.setItem('lastVisit', now.toString());
+    }
+    
+    // Call the function to display the visitor message
+    displayVisitorMessage();
+
+    const navbarToggler = document.getElementById('navbarToggler');
+                const navbarNav = document.getElementById('navbarNav');
+                const navlinks = document.querySelectorAll('.nav-link');
+                
+                // Custom navbar toggle functionality
+                navbarToggler.addEventListener('click', function() {
+                    if (navbarNav.classList.contains('show')) {
                         navbarNav.classList.remove('show');
                         navbarNav.setAttribute('aria-expanded', 'false');
+                    } else {
+                        navbarNav.classList.add('show');
+                        navbarNav.setAttribute('aria-expanded', 'true');
                     }
                 });
-            });
-            
-            // Close navbar when clicking outside (mobile)
-            document.addEventListener('click', function(event) {
-                if (window.innerWidth <= 991.98 && 
-                    !navbarNav.contains(event.target) && 
-                    !navbarToggler.contains(event.target)) {
-                    navbarNav.classList.remove('show');
-                    navbarNav.setAttribute('aria-expanded', 'false');
-                }
-            });
-            
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 991.98) {
-                    navbarNav.classList.remove('show');
-                    navbarNav.setAttribute('aria-expanded', 'false');
-                }
-            });
+                
