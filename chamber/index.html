@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join</title>
-  <meta name="description" content="join.">
+  <meta name="description" content="home.">
   <meta name="author" content="Cristhian Diaz">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:wght@200..900&family=Momo+Trust+Display&family=Slabo+27px&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <meta property="og:title" content="join">
+  <meta property="og:title" content="home">
   <meta property="og:description" content="Connecting businesses, promoting growth, and fostering community in Choloma.">
   <meta property="og:image" content="https://diazeliel.github.io/wdd231/chamber/images/default.webp">
   <meta property="og:url" content="https://diazeliel.github.io/wdd231/chamber/index.html">
@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="https://diazeliel.github.io/wdd231/chamber/index.html"><i class="fas fa-home"></i> Home</a>
+                    <a class="nav-link active" href="https://diazeliel.github.io/wdd231/chamber/index.html"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://diazeliel.github.io/wdd231/chamber/directory.html"><i class="fas fa-address-book"></i> Directory</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="https://diazeliel.github.io/wdd231/chamber/join.html"><i class="fas fa-user-plus"></i> Join</a>
+                        <a class="nav-link " href="https://diazeliel.github.io/wdd231/chamber/join.html"><i class="fas fa-user-plus"></i> Join</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#""><i class="fas fa-compass"></i> Discover</a>
@@ -109,21 +109,44 @@
   <script src="scripts/weather.js"></script>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; <span id="currentYear"></span> Cristhian Diaz, WDD 231</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
-  <!-- Scripts -->
-  <script src="scripts/home.js"></script>
-  <script>
-    // Set dynamic year
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+<footer class="desktop-footer">
+        <class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-info-circle"></i> About Us</h4>
+                    <p>The Chamber of Commerce connects businesses and fosters economic growth in our community.</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Member Benefits</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Events Calendar</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Business Directory</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-share-alt"></i> Connect</h4>
+                    <div class="social-links">
+                        <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <script src="scripts/home.js"></script>
+<script>
+  // Set dynamic year
+  document.getElementById('Year').textContent = new Date().getFullYear();
 
-    // Set last modified date
-    document.getElementById('lastModified').textContent = document.lastModified;
-  </script>
-  </footer>
+  // Set last modified date
+  document.getElementById('lastModified').textContent = document.lastModified;
+</script>
 
+                <p>&copy; Cristhian Diaz, WDD231. All rights reserved.</p>
+            </div>
+        </footer>
 </body>
-
 </html>

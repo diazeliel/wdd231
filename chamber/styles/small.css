@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+#allplaces div {
+    margin: 1rem 8px;
+    border:1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "cost"
+    "location"
+    ;
+}
+
+#allplaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+#allplaces div img {
+    width: 100%;
+     border-radius: 8px;
+    overflow: hidden;
+    grid-area: photograph;
+}
+#allplaces div p{
+    align-self: auto;
+    margin: 1rem 10px;
+    grid-area: description;
+    
+}
+
+#allplaces div h{
+    align-self: auto;
+    margin: 1rem 10px;
+    grid-area: cost;
+        
+}
+
+#allplaces div address {
+    align-self: auto;
+    margin: 1rem 10px;
+    grid-area: location;
+    
+       
+}

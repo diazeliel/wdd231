@@ -1,6 +1,7 @@
 const container = document.getElementById('memberContainer');
 const gridBtn = document.getElementById('gridViewBtn');
 const listBtn = document.getElementById('listViewBtn');
+const currentYear = new Date().getFullYear();
 
 let members = [];
 let currentView = 'grid';
@@ -122,3 +123,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
           })
+
+       
+  // Set dynamic year
+document.getElementById('year').textContent = currentYear;
+
+  // Set last modified date
+  document.getElementById('lastModified').textContent = document.lastModified;
