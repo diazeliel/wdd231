@@ -185,7 +185,7 @@
         // Run once on page load
         animateOnScroll();
 
-
+//weather
 const myKey = '36ace5d273812cc02556b82a21f1ff2e';
 
 function getWeather() {
