@@ -1,0 +1,92 @@
+ [
+    {
+      "position": "Software Engineer",
+      "company": "Tech Innovators",
+      "location": "San Francisco, CA",
+      "salary_range": "$120k - $150k"
+    },
+    {
+      "position": "Product Manager",
+      "company": "Creative Solutions",
+      "location": "New York, NY",
+      "salary_range": "$100k - $130k"
+    },
+    {
+      "position": "Graphic Designer",
+      "company": "Design Hub",
+      "location": "Los Angeles, CA",
+      "salary_range": "$60k - $80k"
+    },
+    {
+      "position": "Data Analyst",
+      "company": "DataCorp",
+      "location": "Chicago, IL",
+      "salary_range": "$70k - $90k"
+    },
+    {
+      "position": "Marketing Specialist",
+      "company": "MarketPro",
+      "location": "Austin, TX",
+      "salary_range": "$55k - $75k"
+    },
+    {
+      "position": "HR Coordinator",
+      "company": "PeopleFirst",
+      "location": "Seattle, WA",
+      "salary_range": "$50k - $65k"
+    },
+    {
+      "position": "UX/UI Designer",
+      "company": "UserFirst",
+      "location": "Boston, MA",
+      "salary_range": "$80k - $110k"
+    },
+    {
+      "position": "Network Administrator",
+      "company": "NetSecure",
+      "location": "Dallas, TX",
+      "salary_range": "$75k - $95k"
+    },
+    {
+      "position": "Content Writer",
+      "company": "WriteRight",
+      "location": "Remote",
+      "salary_range": "$45k - $65k"
+    },
+    {
+      "position": "Financial Analyst",
+      "company": "FinancePlus",
+      "location": "Miami, FL",
+      "salary_range": "$65k - $85k"
+    },
+    {
+      "position": "Customer Support Lead",
+      "company": "HelpDesk Co.",
+      "location": "Denver, CO",
+      "salary_range": "$50k - $70k"
+    },
+    {
+      "position": "Operations Manager",
+      "company": "LogiCorp",
+      "location": "Atlanta, GA",
+      "salary_range": "$90k - $120k"
+    },
+    {
+      "position": "Software Tester",
+      "company": "QualityAssure",
+      "location": "Portland, OR",
+      "salary_range": "$60k - $80k"
+    },
+    {
+      "position": "Business Analyst",
+      "company": "BizInsights",
+      "location": "Philadelphia, PA",
+      "salary_range": "$75k - $100k"
+    },
+    {
+      "position": "Cybersecurity Specialist",
+      "company": "SecureTech",
+      "location": "San Jose, CA",
+      "salary_range": "$110k - $140k"
+    }
+  ];

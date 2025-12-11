@@ -249,5 +249,10 @@ getWeather();
 // copyright footer
 const footer = document.getElementById('footer');
 const lastModified = document.lastModified;
-footer.innerHTML = `&copy; ${new Date().getFullYear()} Cristhian Diaz. WDD231.<br>
+footer.innerHTML = `&copy; ${new Date().getFullYear()} Cristhian Diaz. WDD231. link video https://www.youtube.com/watch?v=ffduFopYe8A <br>
   Last modified: ${lastModified}`;
+
+
+
+
+ 
